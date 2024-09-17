@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Container styling */
+.container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 1rem; 
+}
+
+/* Card item styling */
+.card-item {
+    width: calc(25% - 2rem); 
+    margin: 1rem; 
+    position: relative;
+    border-radius: 8px; 
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(63, 49, 49));
+    padding-bottom: 2rem; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 20px 40px rgba(87, 84, 84, 0.328); 
+}
+
+/* Hover effect for card item */
+.card-item:hover {
+    transform: rotate(1deg); 
+    box-shadow: 0 20px 40px rgba(16, 14, 14, 0.5); 
+}
+
+/* Image styling */
+.image {
+    width: 100%; 
+    height: 200px; 
+    border-radius: 8px; 
+    background-size: cover; 
+    background-position: center center; 
+}
+
+/* Specific background images for each card */
+.image1 { background-image: url('https://i.pinimg.com/564x/bf/c5/44/bfc5444e4a21bd37fe3594503ce658ac.jpg'); }
+.image2 { background-image: url('https://i.pinimg.com/564x/2d/6e/88/2d6e88cf8acfd108bb94c609b14999c6.jpg'); }
+.image3 { background-image: url('https://i.pinimg.com/564x/41/fc/5a/41fc5aa1ee9151eb4cc77c5a6698d42f.jpg'); }
+.image4 { background-image: url('https://i.pinimg.com/564x/3e/23/be/3e23be4a721507679809c8d4a170c4a9.jpg'); }
+
+/* Content styling */
+.content {
+    padding: 1rem; 
+}
+
+/* Title styling */
+.title {
+    margin: 1rem 0; 
+    color: #e65b00; 
+    font-size: 1.4rem; 
+}
+
+/* Paragraph styling */
+p {
+    font-size: 14px; 
+    margin-bottom: 2rem; 
+    color: rgb(124, 133, 141); 
+}
+
+/* Button styling */
+.button {
+    color: white; 
+    font-size: 12px; 
+    text-align: center; 
+    padding: 10px 18px; 
+    text-decoration: none; 
+    background-color: #e65b00; 
+} 
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1024px) {
+    .card-item {
+        width: calc(33.33% - 2rem); 
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .card-item {
+        width: calc(50% - 2rem); 
+    }
+}
+
+@media (max-width: 480px) {
+    .card-item {
+        width: calc(100% - 2rem); 
+    }
+}
